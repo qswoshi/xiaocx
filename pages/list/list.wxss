@@ -1,0 +1,45 @@
+/* list.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.item-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-desc {
+  font-size: 14px;
+  color: #999;
+}
+
+.loading {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.error {
+  text-align: center;
+  padding: 10px 0;
+  color: #f00;
+}

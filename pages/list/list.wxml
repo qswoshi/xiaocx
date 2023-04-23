@@ -1,0 +1,16 @@
+<!-- list.wxml -->
+<view class="container">
+  <view wx:for="{{listData}}" wx:key="id" class="item">
+    <image class="item-image" src="{{item.imageUrl}}" lazy-load mode="widthFix" />
+    <view class="item-info">
+      <text class="item-title">{{item.title}}</text>
+      <text class="item-desc">{{item.description}}</text>
+    </view>
+  </view>
+
+  <loading hidden="{{!loading}}" />
+
+  <view class="error" hidden="{{!error}}">
+    <text>加载失败，请下拉刷新重试</text>
+  </view>
+</view>

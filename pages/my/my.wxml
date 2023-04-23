@@ -1,0 +1,22 @@
+<!-- 我的页面 my.wxml -->
+<view class="container">
+  <view class="header">
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="avatar-button">
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+    </button>
+    <text class="nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="content">
+    <view class="section">
+      <view class="section-title">功能区</view>
+      <view class="section-content">
+        <navigator class="section-item" url="/pages/favorites/favorites">
+          <text class="section-item-text">我的收藏</text>
+        </navigator>
+        <navigator class="section-item" url="/pages/history/history">
+          <text class="section-item-text">浏览记录</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

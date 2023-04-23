@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="category-list">
+    <view
+      wx:for="{{mainCategories}}"
+      wx:key="id"
+      data-id="{{item.id}}"
+      class="category-item {{currentCategoryId === item.id ? 'active' : ''}}"
+      bindtap="selectMainCategory"
+    >
+      {{item.name}}
+    </view>
+  </view>
+
+  <view class="sub-category-list">
+    <view wx:for="{{subCategories}}" wx:key="id" class="sub-category-item">
+      <navigator
+        url="/pages/products/products?categoryId={{item.id}}"
+        hover-class="none"
+      >
+        <image src="{{item.image}}" class="sub-category-image" />
+        <text class="sub-category-name">{{item.name}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+/* 通用样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/* 轮播图样式 */
+swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+/* 搜索框样式 */
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  margin-top: 20rpx;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+.search-input {
+  width: 80%;
+  height: 80%;
+  padding-left: 10rpx;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+/* 一级分类样式 */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20rpx;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.333%;
+  padding: 20rpx 0;
+}
+
+.category-icon {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  background-color: #1AAD19;
+  padding: 20rpx;
+}
+
+.category-name {
+  margin-top: 10rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.splash-ad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: none; /* 隐藏广告，如需显示请修改 display 属性 */
+}

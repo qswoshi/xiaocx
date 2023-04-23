@@ -1,0 +1,11 @@
+/* 推荐页面样式 recommend.wxss */
+.recommend-container {
+  width: 100%;
+}
+
+.recommend-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10rpx;
+}

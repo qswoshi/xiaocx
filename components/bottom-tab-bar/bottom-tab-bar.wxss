@@ -1,0 +1,26 @@
+/* bottom-tab-bar.wxss */
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100rpx;
+  padding: 20rpx 0;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.tab-label {
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 4rpx;
+}

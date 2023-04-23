@@ -1,0 +1,15 @@
+<!-- bottom-tab-bar.wxml -->
+<view class="tab-bar">
+  <view class="tab-item" data-index="0" bindtap="switchTab">
+    <image src="/assets/images/home-icon.png" alt="首页" class="tab-icon" />
+    <text class="tab-label">首页</text>
+  </view>
+  <view class="tab-item" data-index="1" bindtap="switchTab">
+    <image src="/assets/icons/recommend-icon.png" alt="推荐" class="tab-icon" />
+    <text class="tab-label">推荐</text>
+  </view>
+  <view class="tab-item" data-index="2" bindtap="switchTab">
+    <image src="/assets/images/my-icon.png" alt="我的" class="tab-icon" />
+    <text class="tab-label">我的</text>
+  </view>
+</view>

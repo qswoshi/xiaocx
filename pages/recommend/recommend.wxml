@@ -1,0 +1,10 @@
+<!-- 推荐页面模板 recommend.wxml -->
+<view class="recommend-container">
+  <scroll-view scroll-y="true" enable-back-to-top="true" bindscrolltolower="loadMore" style="height: 100%;">
+    <view class="recommend-list">
+      <block wx:for="{{recommendItems}}" wx:key="*this">
+        <your-card-component data="{{item}}" wx:if="{{item.type === 'card'}}"></your-card-component>
+      </block>
+    </view>
+  </scroll-view>
+</view>
